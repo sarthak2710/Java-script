@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>7th program</title>
+	<script type="text/javascript">
+		function check() 
+		{
+			
+			var u=prompt("Enter your user name: ");
+			var p=prompt("Enter your password: ");
+			if(u=="" || p=="")
+			{
+				alert("enter username and password")
+			}
+			if(u!="" && p!="")
+			{   
+				document.write("user name:"+u);
+		        document.write("<br>password:"+p);
+		        document.write("<br>YOU HAVE SUCCESSFULLY LOGED IN");
+		    }
+			
+
+		}
+	</script>
+
+</head>
+<body>
+	<button value="login" onclick="check()">Login</button>
+
+</body>
+</html>
