@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>9th html</title>
+    <script type="text/javascript">
+    	var flag=true;
+    	function commentform()
+    	    	{
+    		var cform="<form action='Comment'>Enter Name:<br><input type='text' name='name'/><br/> Enter Email:<br><input type='email' name='email'/><br/> <br> Enter Comment:<br/> <textarea row='5' cols='70'></textarea><br><input type='submit' value='post comment'/> </form>";
+    	
+    	if (flag) {
+    		document.getElementById("mylocation").innerHTML=cform;
+    		flag=false;
+    	}
+    	else
+    	{
+    		document.getElementById("mylocation").innerHTML="";
+    		flag=true;
+    	}
+        }
+    </script>
+</head>
+<body>
+	<button onclick="commentform()">Comment</button>
+    <div id="mylocation"></div>
+</body>
+</html>
